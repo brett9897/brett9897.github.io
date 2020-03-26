@@ -12,9 +12,13 @@ main > .container {
 }
 
 ul {
-    &.no-bullet {
+    &.no-bullets {
         list-style-type: none;
         padding-inline-start: 0;
+    }
+
+    &.archive-list {
+        padding-inline-start: 1em;
     }
 }
 
@@ -24,4 +28,8 @@ ul {
 
 .github-link, .github-link:hover {
     color: #000000;
+}
+
+.instagram-link, .instagram-link:hover {
+    color: #3f729b;
 }
