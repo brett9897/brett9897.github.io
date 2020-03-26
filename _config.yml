@@ -3,3 +3,10 @@ plugins:
   - jekyll-seo-tag
 
 github: [metadata]
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
