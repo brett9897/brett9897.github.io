@@ -1,0 +1,9 @@
+<h5>Recent Posts</h5>
+<ul class="no-bullet">
+    {% for post in site.posts limit:5 %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+    {% endfor %}
+    <li><a href="#">> Archives</a></li>
+</ul>

@@ -1,5 +1,5 @@
 main > .container {
-    padding: 60px 15px 0;
+    padding: 100px 15px 0;
 }
 
 .footer {
@@ -8,5 +8,12 @@ main > .container {
     & > .container {
         padding-right: 15px;
         padding-left: 15px;
+    }
+}
+
+ul {
+    &.no-bullet {
+        list-style-type: none;
+        padding-inline-start: 0;
     }
 }
