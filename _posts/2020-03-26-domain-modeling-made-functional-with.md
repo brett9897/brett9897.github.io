@@ -37,8 +37,7 @@ and add another case to the switch statement\*. The final benefit is that we can
 \*NOTE: You can't actually use the typeof operator like that in Typescript so we will have to come up with another solution.
 
 ##### Parts:
-- [Building Simple Types]({% post_url 2020-03-25-converting-f-types-to-typescript %})
-- [Building Constrained Types]({% post_url 2020-03-26-constrained-types %})
+{% include functionalTsLinks.html %}
 
 ##### Further Reading
 [https://fsharpforfunandprofit.com/ddd/](https://fsharpforfunandprofit.com/ddd/)

@@ -133,7 +133,6 @@ However using the type is a little bit different now. Now you have to use `Order
 const orderId: OrderId = OrderId.create('1234');
 const value = OrderId.value(orderId);
 ```
-
+&nbsp;
 ##### Parts
-- [Intro]({% post_url 2020-03-26-domain-modeling-made-functional-with %})
-- [Building Simple Types]({% post_url 2020-03-25-converting-f-types-to-typescript %})
+{% include functionalTsLinks.html %}

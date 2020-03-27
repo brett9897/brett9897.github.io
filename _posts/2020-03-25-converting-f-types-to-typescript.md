@@ -39,5 +39,4 @@ Sometimes it will become important to figure out which type we have. The most co
 This is the end for dealing with simple types. In my next post I will discuss constrained types. Also, yes I hear you, This is a lot of boilerplate to get started but in the end the function calls knowing they are getting the correct type is completely worth it.
 
 ##### Parts
-- [Intro]({% post_url 2020-03-26-domain-modeling-made-functional-with %})
-- [Building Constrained Types]({% post_url 2020-03-26-constrained-types %})
+{% include functionalTsLinks.html %}
