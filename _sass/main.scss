@@ -67,14 +67,27 @@ li > a {
     background-position: center;
     background-color: rgba(255, 255, 255, 1);
     height: 315px;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+
+    &.nav-up {
+        top: -315px;
+    }
 }
 
 .navbar {
     background-color: $accent-color;
-    border-top: 5px solid rgba(255, 255, 255, 1);
-
+    transition: top 0.2s ease-in-out;
+    
     &.fixed-top {
-        top: 315px;
+        &.nav-up {
+            top: 0;
+            border-top: 0;
+        }
+        &.nav-down {
+            top: 315px;
+            border-top: 5px solid rgba(255, 255, 255, 1);
+        }
     }
 
     .navbar-nav .nav-item {
