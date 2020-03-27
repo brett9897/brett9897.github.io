@@ -5,7 +5,7 @@ tags: [Typescript, Javascript, C#, Java, Nodejs, React, Angular]
 ---
 # About
 
-<img alt="photo of myself" src="/assets/images/me.jpg" height="425" width="375" />
+<img alt="photo of myself" src="/assets/images/me.jpg" height="340" width="425" />
 
 Hi! My name is Brett. I have been a software engineer for about a decade now. 
 
