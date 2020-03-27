@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Converting F# Types to Typescript
-date: '2020-03-25T20:20:00.001-04:00'
+title: Simple Types Using Typescript
+date: '2020-03-26T20:20:00.001-04:00'
 author: Brett Koenig
-tags: 
+tags: [Typescript]
+category: FunctionalTypescript
 modified_time: '2020-03-26T00:18:56.690-04:00'
 permalink: ':year/:month/:slug'
 ---

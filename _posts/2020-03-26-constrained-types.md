@@ -3,6 +3,7 @@ title: Constrained Types Using Typescript
 author: Brett Koenig
 date: '2020-03-26T20:36:00.000-04:00'
 tags: [Typescript]
+category: FunctionalTypescript
 ---
 Now that we know how to create a simple type. Let's look at a contrained type.
 

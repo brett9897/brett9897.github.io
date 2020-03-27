@@ -4,6 +4,7 @@ title: Domain Modeling Made Functional With Typescript
 date: '2020-03-26T00:04:00.000-04:00'
 author: Brett Koenig
 tags: [Typescript]
+category: FunctionalTypescript
 modified_time: '2020-03-26T00:23:50.979-04:00'
 ---
 
