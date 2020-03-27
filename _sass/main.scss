@@ -1,5 +1,14 @@
+$primary-color: #bdbfc6;
+$active-link-color: #ffffff;
+$link-color: rgb(255, 198, 198);
+$accent-color: #fb0300;
+
+body {
+    background-color: rgba(255, 255, 255, 0.934);
+}
+
 main > .container {
-    padding: 100px 15px 0;
+    padding: 420px 15px 0;
 }
 
 .footer {
@@ -44,6 +53,41 @@ p {
     margin-top: 1rem;
 }
 
-li > a.active {
-    color:#0a0a97
+li > a.active, li > a:hover {
+    color: $accent-color;
+}
+
+li > a {
+    color: darken($primary-color, 30%);
+}
+
+.banner {
+    background-image: url("/assets/images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 1);
+    height: 315px;
+}
+
+.navbar {
+    background-color: $accent-color;
+    border-top: 5px solid rgba(255, 255, 255, 1);
+
+    &.fixed-top {
+        top: 315px;
+    }
+
+    .navbar-nav .nav-item {
+        &.active .nav-link, .nav-link:hover {
+            color: $active-link-color;
+        }
+
+        .nav-link {
+            color: $link-color;
+        }
+    }
+
+    .navbar-toggler {
+        color: $primary-color;
+    }
 }

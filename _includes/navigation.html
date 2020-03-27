@@ -1,19 +1,21 @@
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="/">Learn From IT</a>
+    <div class="banner fixed-top">&nbsp;</div>
+    <nav class="navbar navbar-expand-md fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="mainNavigation">
-            <ul class="navbar-nav mr-auto">
-                {% for item in site.data.navigation %}
-                    <li class="nav-item {% if page.url == item.link %} active {% endif %}">
-                        <a href="{{ item.link }}" class="nav-link">
-                            {{ item.name }}
-                        </a>
-                    </li>
-                {% endfor %}    
-            </ul>
+            <div class="container">
+                <ul class="navbar-nav mr-auto">
+                    {% for item in site.data.navigation %}
+                        <li class="nav-item {% if page.url == item.link %} active {% endif %}">
+                            <a href="{{ item.link }}" class="nav-link">
+                                {{ item.name }}
+                            </a>
+                        </li>
+                    {% endfor %}    
+                </ul>
+            </div>
         </div>
     </nav>
 </header>
