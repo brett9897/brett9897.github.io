@@ -8,7 +8,11 @@ body {
 }
 
 main > .container {
-    padding: 420px 15px 0;
+    padding: 320px 15px 0;
+
+    @media (min-width: 576px) {
+        padding-top: 420px;
+    }
 }
 
 .footer {
@@ -62,31 +66,46 @@ li > a {
 }
 
 .banner {
-    background-image: url("/assets/images/banner.png");
+    background-image: url("/assets/images/banner_mobile.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(255, 255, 255, 1);
-    height: 315px;
+    height: 215px;
     top: 0;
     transition: top 0.2s ease-in-out;
 
+    @media (min-width: 576px) {
+        background-image: url("/assets/images/banner.png");
+        height: 315px;
+    }
+
     &.nav-up {
-        top: -315px;
+        top: -215px;
+    }
+
+    @media (min-width: 576px) {
+        &.nav-up {
+            top: -315px;
+        }
     }
 }
 
 .navbar {
     background-color: $accent-color;
     transition: top 0.2s ease-in-out;
-    
+
     &.fixed-top {
         &.nav-up {
             top: 0;
             border-top: 0;
         }
         &.nav-down {
-            top: 315px;
+            top: 215px;
             border-top: 5px solid rgba(255, 255, 255, 1);
+
+            @media (min-width: 576px) {
+                top: 315px;
+            }
         }
     }
 
