@@ -1,3 +1,8 @@
+url: https://learnfromit.co
+tagline: My daily struggles with code
+logo: /assets/images/favicon.png
+image: /assets/images/banner.png
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
