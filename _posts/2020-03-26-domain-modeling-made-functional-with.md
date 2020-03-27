@@ -3,7 +3,7 @@ layout: post
 title: Domain Modeling Made Functional With Typescript
 date: '2020-03-26T00:04:00.000-04:00'
 author: Brett Koenig
-tags: 
+tags: [Typescript]
 modified_time: '2020-03-26T00:23:50.979-04:00'
 ---
 
@@ -36,7 +36,8 @@ and add another case to the switch statement\*. The final benefit is that we can
 \*NOTE: You can't actually use the typeof operator like that in Typescript so we will have to come up with another solution.
 
 ##### Parts:
-[Part1: Building Simple Types]({% post_url 2020-03-25-converting-f-types-to-typescript %})
+- [Building Simple Types]({% post_url 2020-03-25-converting-f-types-to-typescript %})
+- [Building Constrained Types]({% post_url 2020-03-26-constrained-types %})
 
 ##### Further Reading
 [https://fsharpforfunandprofit.com/ddd/](https://fsharpforfunandprofit.com/ddd/)
