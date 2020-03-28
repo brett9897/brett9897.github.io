@@ -2,7 +2,7 @@
     // Hide Header on on scroll down
     var didScroll;
     var lastScrollTop = 0;
-    var delta = 15;
+    var delta = 80;
     var navbarHeight = $('header').outerHeight();
 
     $(window).scroll(function(event){
