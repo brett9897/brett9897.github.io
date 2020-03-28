@@ -2,16 +2,24 @@ $primary-color: #bdbfc6;
 $active-link-color: #ffffff;
 $link-color: rgb(255, 198, 198);
 $accent-color: #fb0300;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px; 
 
 body {
     background-color: rgba(255, 255, 255, 0.934);
 }
 
 main > .container {
-    padding: 320px 15px 0;
+    padding: 220px 15px 0;
 
-    @media (min-width: 576px) {
+    @media (min-width: $md) {
         padding-top: 420px;
+    }
+
+    @media (min-width: $lg) {
+        padding-top: 550px;
     }
 }
 
@@ -65,27 +73,44 @@ li > a {
     color: darken($primary-color, 30%);
 }
 
-.banner {
-    background-image: url("/assets/images/banner_mobile.png");
-    background-repeat: no-repeat;
-    background-position: center;
+.banner-container {
     background-color: rgba(255, 255, 255, 1);
-    height: 215px;
+    z-index: 1030;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     transition: top 0.2s ease-in-out;
 
-    @media (min-width: 576px) {
-        background-image: url("/assets/images/banner.png");
-        height: 315px;
+    .banner {
+        background-image: url("/assets/images/banner_mobile.png");
+        background-repeat: no-repeat;
+        height: 215px;
     }
 
     &.nav-up {
         top: -215px;
     }
 
-    @media (min-width: 576px) {
+    @media (min-width: $md) {
+        .banner {
+            background-image: url("/assets/images/banner.png");
+            height: 315px;
+        }
+        
         &.nav-up {
             top: -315px;
+        }
+    }
+
+    @media (min-width: $lg) {
+        .banner {
+            background-image: url("/assets/images/banner-lg.png");
+            height: 465px;
+        }
+
+        &.nav-up {
+            top: -465px;
         }
     }
 }
@@ -103,8 +128,12 @@ li > a {
             top: 215px;
             border-top: 5px solid rgba(255, 255, 255, 1);
 
-            @media (min-width: 576px) {
+            @media (min-width: $md) {
                 top: 315px;
+            }
+
+            @media (min-width: $lg) {
+                top: 465px;
             }
         }
     }
