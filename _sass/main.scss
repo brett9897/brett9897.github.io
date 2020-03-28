@@ -19,7 +19,11 @@ main > .container {
     }
 
     @media (min-width: $md) {
-        padding-top: 420px;
+        padding-top: 375px;
+    }
+
+    @media (min-width: $lg) {
+        padding-top: 475px;
     }
 
     @media (min-width: $xl) {
@@ -79,12 +83,14 @@ li > a {
 
 .banner-container {
     background-color: rgba(255, 255, 255, 1);
-    z-index: 1030;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     transition: top 0.2s ease-in-out;
+    
+    @media (max-width: 375.5px) {
+        .col-md-9 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
 
     .banner {
         background-image: url("/assets/images/banner_mobile.png");
@@ -98,18 +104,29 @@ li > a {
 
     @media (min-width: $md) {
         .banner {
-            background-image: url("/assets/images/banner.png");
-            height: 315px;
+            background-image: url("/assets/images/banner-md.png");
+            height: 290px;
         }
         
         &.nav-up {
-            top: -315px;
+            top: -290px;
+        }
+    }
+
+    @media (min-width: $lg) {
+        .banner {
+            background-image: url('/assets/images/banner-lg.png');
+            height: 390px;
+        }
+
+        &.nav-up {
+            top: -390px;
         }
     }
 
     @media (min-width: $xl) {
         .banner {
-            background-image: url("/assets/images/banner-lg.png");
+            background-image: url("/assets/images/banner-xl.png");
             height: 465px;
         }
 
@@ -133,7 +150,11 @@ li > a {
             border-top: 5px solid rgba(255, 255, 255, 1);
 
             @media (min-width: $md) {
-                top: 315px;
+                top: 290px;
+            }
+
+            @media (min-width: $lg) {
+                top: 390px;
             }
 
             @media (min-width: $xl) {
