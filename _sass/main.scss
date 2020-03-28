@@ -12,13 +12,13 @@ body {
 }
 
 main > .container {
-    padding: 220px 15px 0;
+    padding: 300px 15px 0;
 
     @media (min-width: $md) {
         padding-top: 420px;
     }
 
-    @media (min-width: $lg) {
+    @media (min-width: $xl) {
         padding-top: 550px;
     }
 }
@@ -103,7 +103,7 @@ li > a {
         }
     }
 
-    @media (min-width: $lg) {
+    @media (min-width: $xl) {
         .banner {
             background-image: url("/assets/images/banner-lg.png");
             height: 465px;
@@ -132,7 +132,7 @@ li > a {
                 top: 315px;
             }
 
-            @media (min-width: $lg) {
+            @media (min-width: $xl) {
                 top: 465px;
             }
         }
