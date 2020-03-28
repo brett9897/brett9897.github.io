@@ -155,4 +155,30 @@ li > a {
     .navbar-toggler {
         color: $primary-color;
     }
+
+    .navbar-brand.mobile {
+        & > img {
+            display: none;
+        }
+
+        &.nav-up > img {
+            display: inherit;
+        }
+
+        @media (min-width: $md) {
+            & > img, &.nav-up > img {
+                display: none;
+            }
+        }
+    }
+
+    .navbar-brand.full-menu {
+        display: none;
+
+        @media (min-width: $md) {
+            &.nav-up {
+                display: inherit;
+            }
+        }
+    }
 }

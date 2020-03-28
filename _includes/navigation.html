@@ -9,11 +9,13 @@
         </div>
     </div>
     <nav class="navbar navbar-expand-md fixed-top nav-down">
+        <a class="navbar-brand mobile nav-down" href="/"><img src="/assets/images/favicon.png" width="32" height="32"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="mainNavigation">
             <div class="container">
+                <a class="navbar-brand full-menu nav-down" href="/"><img src="/assets/images/favicon.png" width="32" height="32">&nbsp;</a>
                 <ul class="navbar-nav mr-auto">
                     {% for item in site.data.navigation %}
                         <li class="nav-item {% if page.url == item.link %} active {% endif %}">
