@@ -30,6 +30,7 @@ Consider the following.
 <script src="https://gist.github.com/brett9897/aa70c952e5723c94fc0f64da51655f05.js"></script>
 There are multiple benefits to this approach. First of all now we know that there is no place in our code that accidentally calls `handleGoogleCampaignSpecifics()` with a Bing campaign because the transpiler will complain about it long before you ever run your code. Secondly the two campaign types are free to evolve however they need to as requirements change. Maybe a `GoogleCampaign`'s name can only have a maximum length of 50 characters we can handle this with a constrained type (I will explain that further later). Thirdly if we start work on a third search engine we can easily just model their campaign and then just add it to the `Campaign` type like 
 ```typescript
+
 type Campaign = GoogleCampaign | BingCampaign | NewSearchEngineCampaign
 ``` 
 and add another case to the switch statement\*. The final benefit is that we can move all of the data validation to the boundaries of the application where the objects of each type are created. That way we can remove duplicate data validation checks and assume that the object being passed in is valid because it fits the type's shape and was validated before it was created.
