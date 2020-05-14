@@ -1,12 +1,11 @@
-url: https://learnfromit.co
-tagline: My daily struggles with code
-logo: /assets/images/favicon.png
-
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
 github: [metadata]
+
+title: Learn From IT
+tagline: My daily struggles with code
 
 defaults:
   - scope:
