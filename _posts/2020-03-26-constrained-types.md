@@ -5,9 +5,9 @@ date: '2020-03-26T20:36:00.000-04:00'
 tags: [Typescript]
 category: FunctionalTypescript
 ---
-Now that we know how to create a simple type. Let's look at a contrained type.
+Now that we know how to create a simple type. Let's look at a constrained type.
 
-A constrained type is a type that is checked upon creation to make sure that the value is actually of that type.  A google example would be an email type.  We know that an email has a specifc shape based on the specification.  When we create a field that is supposed to be an email we make sure that it is a valid email before returning the object.
+A constrained type is a type that is checked upon creation to make sure that the value is actually of that type.  A google example would be an email type.  We know that an email has a specific shape based on the specification.  When we create a field that is supposed to be an email we make sure that it is a valid email before returning the object.
 
 I'll show you an example with the `OrderId` that we used in the previous example.  We are going to assume that an `OrderId` must exist and must be at most 50 characters.
 
@@ -127,7 +127,7 @@ class OrderId implements OrderId {
 ```
 This final attempt requires us to use the `interface` and `class` keywords but, it is the only way I have found to keep the object secure.  You can do some Javascript tricks to still mess with it, but if you are using just Typescript it will keep you safe.  I'm honestly still torn between attempt 2 and the final attempt.  Attempt 2 is more functional, but I like that this final attempt forces the user to use `OrderId`'s `create()` method.
 
-However using the type is a little bit different now. Now you have to use `OrderId.value()` to get at the objects value.
+However, using the type is a little bit different now. Now you have to use `OrderId.value()` to get at the object's value.
 ```typescript
 
 const orderId: OrderId = OrderId.create('1234');
