@@ -1,7 +1,7 @@
 (function() {
     var didScroll;
     var lastScrollTop = 0;
-    var delta = 80;
+    var delta = 100;
     var navbarHeight = $('.banner-container').outerHeight();
 
     $(window).scroll(function(event){
@@ -22,7 +22,7 @@
         if(Math.abs(lastScrollTop - st) <= delta)
             return;
         
-        if (st > lastScrollTop && st > navbarHeight - delta){
+        if (st > lastScrollTop){
             $('.nav-down').removeClass('nav-down').addClass('nav-up');
         } else {
             if(st < navbarHeight) {

@@ -83,7 +83,7 @@ li > a {
 
 .banner-container {
     background-color: rgba(255, 255, 255, 1);
-    transition: top 0.2s ease-in-out;
+    transition: top 0.2s ease-in;
     
     @media (max-width: 375.5px) {
         .col-md-9 {
@@ -138,7 +138,7 @@ li > a {
 
 .navbar {
     background-color: $accent-color;
-    transition: top 0.2s ease-in-out;
+    transition: top 0.2s ease-in;
 
     &.fixed-top {
         &.nav-up {
