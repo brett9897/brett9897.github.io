@@ -7,6 +7,8 @@ github: [metadata]
 title: Learn From IT
 tagline: My daily struggles with code
 
+future: false
+
 defaults:
   - scope:
       path: ""
