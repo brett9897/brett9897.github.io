@@ -10,6 +10,15 @@
         <link rel="stylesheet" href="/assets/css/styles.css" />
         {% seo %}
         <meta property="og:image" content="{{ site.url }}/assets/images/banner-mobile.png" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@brett9897">
+        <meta name="twitter:title" content="{{ page.title }}">
+        {% if page.description == nil %}
+            <meta name="twitter:description" content="{{ site.tagline }}">
+        {% else %}
+            <meta name="twitter:description" content="{{ page.description }}">
+        {% endif %}
+        <meta name="twitter:image" content="{{ site.url }}/assets/images/banner-mobile.png">
     </head>
     <body class="d-flex flex-column h-100">
         {% include navigation.html %}
